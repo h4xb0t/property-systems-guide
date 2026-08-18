@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Smart home and property systems owner guide" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Property Systems Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#start" aria-label="Property Systems Guide home">
+      <span class="brand-mark" aria-hidden="true">⌂</span>
+      <span><strong>Property Systems Guide</strong><small>Owner handoff manual</small></span>
+    </a>
+    <button id="menuButton" class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar" aria-label="Guide navigation">
+      <div class="search-wrap">
+        <label for="search">Search this guide</label>
+        <input id="search" type="search" placeholder="Try “pool”, “garage”, “lock”…" autocomplete="off" />
+      </div>
+      <nav id="nav"></nav>
+      <div class="sidebar-note">
+        <strong>Important accessories</strong>
+        <p>Binder, Matter setup codes and WYBOT power adapter are in the <b>main-house attached-garage closet</b>.</p>
+      </div>
+    </aside>
+
+    <main id="content" class="content" tabindex="-1"></main>
+  </div>
+
+  <footer>
+    <p>Property Systems Guide · Updated August 2026 · Manufacturer procedures can change; official support links are included where available.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
