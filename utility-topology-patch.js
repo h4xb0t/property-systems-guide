@@ -12,14 +12,17 @@ window.applyGuidePatches = function applyGuidePatchesWithUtilityTopology() {
     utilities.html = utilities.html
       .replace(
         '<p class="section-intro">Current service providers and known service options for the property. Use the provider links below to establish or manage service.</p>',
-        '<p class="section-intro">Current service providers and known service options for the property. Several utilities are split between the main house and guest-house side of the property, so pay close attention to which buildings each account serves.</p>' +
-        '<div class="callout warn"><strong>Important: this property does not use one account for every utility</strong>' +
-        '<b>Electricity:</b> the main house and guest house are separate electrical service connections and are billed separately. ' +
-        '<b>Sewer:</b> the main house and guest house are also on two separately billed sewer accounts; the office/shop shares the guest-house sewer line. ' +
-        '<b>Water:</b> one water service supplies the entire property. ' +
-        '<b>Natural gas:</b> service is available only at the main house.</div>' +
-        '<div class="callout info"><strong>Identifying the guest-house utility account may take a little trial and error</strong>' +
-        'The guest house does <b>not</b> have its own distinct mailing address. Depending on the utility company or its records, the guest-house service may appear under the <b>main property address</b>, as <b>Unit B</b>, as <b>Guest House</b>, or as an <b>additional/secondary line or service</b>. When setting up the separately billed guest-house electric or sewer service, verify that the provider has selected the <b>guest-house service rather than the main-house service</b> before completing the account setup. If the description is ambiguous, ask the provider to distinguish the two existing service connections/accounts.</div>'
+        '<p class="section-intro">Current service providers and known service options for the property. A few services are split between the main house and guest-house side, so this quick map is worth reading before opening accounts.</p>' +
+        '<div class="utility-topology" aria-label="Utility service layout">' +
+          '<div class="utility-topology-head"><div><span class="kicker">Service layout</span><h3>How utilities are divided</h3></div><span class="utility-topology-hint">At a glance</span></div>' +
+          '<div class="utility-topology-grid">' +
+            '<div class="utility-topology-item"><div class="utility-topology-icon">⚡</div><div class="utility-topology-copy"><div class="utility-topology-title"><b>Electricity</b><span class="utility-count">2 accounts</span></div><p><strong>Main house</strong> is one service. <strong>Guest-house service</strong> is separately billed and also powers the office/shop, shed and pool equipment.</p></div></div>' +
+            '<div class="utility-topology-item"><div class="utility-topology-icon">🚽</div><div class="utility-topology-copy"><div class="utility-topology-title"><b>Sewer</b><span class="utility-count">2 bills</span></div><p><strong>Main house</strong> has its own sewer service. The <strong>guest-house sewer line</strong> is separate and is shared with the office/shop.</p></div></div>' +
+            '<div class="utility-topology-item"><div class="utility-topology-icon">🚰</div><div class="utility-topology-copy"><div class="utility-topology-title"><b>Water</b><span class="utility-count single">1 service</span></div><p>One Southern Utilities water service supplies the <strong>entire property</strong>.</p></div></div>' +
+            '<div class="utility-topology-item"><div class="utility-topology-icon">🔥</div><div class="utility-topology-copy"><div class="utility-topology-title"><b>Natural gas</b><span class="utility-count single">Main house only</span></div><p>CenterPoint natural gas is available at the <strong>main house only</strong>.</p></div></div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="utility-identification-note"><div class="utility-identification-icon">ⓘ</div><div><strong>Finding the guest-house account</strong><p>The guest house has no separate mailing address, so a provider may list its service as <b>Unit B</b>, <b>Guest House</b>, the <b>main property address</b>, or an <b>additional / secondary service</b>. For the separately billed electric and sewer services, confirm you are opening the <b>guest-house service—not the main-house account</b>. If the listing is ambiguous, ask the provider to distinguish the two existing services.</p></div></div>'
       )
       .replace(
         '<p>Water service for the property.</p>',
