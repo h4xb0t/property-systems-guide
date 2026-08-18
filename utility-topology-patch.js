@@ -27,7 +27,7 @@ window.applyGuidePatches = function applyGuidePatchesWithUtilityTopology() {
       )
       .replace(
         '<p>Sewer service for the property.</p>',
-        '<p><b>There are two separately billed Liberty Utilities sewer services:</b> one for the main house and one for the guest-house side of the property. The <b>office/shop shares the guest-house sewer line</b>; it does not have its own separate sewer account. Because the guest house has no distinct mailing address, the guest-house sewer account may be described differently in Liberty\'s records; verify that the correct of the two sewer services is being selected.</p>'
+        '<p><b>There are two separately billed Liberty Utilities sewer services:</b> one for the main house and one for the guest-house side of the property. The <b>office/shop shares the guest-house sewer line</b>; it does not have its own separate sewer account. Because the guest house has no distinct mailing address, the guest-house sewer account may be described differently in Liberty\'s records; verify that the <b>guest-house sewer service</b>, rather than the main-house service, is being selected.</p>'
       )
       .replace(
         '<p>Natural-gas service.</p>',
