@@ -25,15 +25,6 @@ window.applyGuidePatches = function applyGuidePatchesWithRvPower() {
     `;
   }
 
-  const inventory = sections.find(section => section.id === 'inventory');
-  if (inventory && !inventory.html.includes('Exterior RV power panel')) {
-    inventory.html = inventory.html.replace(
-      '<tr><td>RV garage</td><td>Govee H616C LED strip</td><td>Govee Home</td><td>Optional connected lighting</td></tr>',
-      '<tr><td>RV garage</td><td>Govee H616C LED strip</td><td>Govee Home</td><td>Optional connected lighting</td></tr>' +
-      '<tr><td>Guest-house side facing RV garage</td><td>Exterior RV power panel</td><td>Electrical</td><td>30A RV hookup + 20A standard outlets; currently routed into RV garage through a window</td></tr>'
-    );
-  }
-
   const buildings = sections.find(section => section.id === 'buildings');
   if (buildings && !buildings.html.includes('30A RV hookup')) {
     buildings.html = buildings.html.replace(
