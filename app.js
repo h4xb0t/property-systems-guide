@@ -2,6 +2,7 @@ async function loadGuide() {
   const r = await fetch("data/guide-data.js");
   if (!r.ok) throw new Error("Unable to load guide data");
   Function(await r.text())();
+  if (typeof window.applyGuidePatches === 'function') window.applyGuidePatches();
 }
 
 function boot() {
