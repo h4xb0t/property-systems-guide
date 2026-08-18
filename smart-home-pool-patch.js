@@ -95,7 +95,7 @@ window.applyGuidePatches = function applyGuidePatchesWithSmartHomeAndPool() {
       '</div>' +
       '<p><b>Water bubbler:</b> the pool equipment includes an app-controlled diverter/valve that controls the water bubbler. Use the Hayward Omni app to operate that water feature.</p>' +
       '<p><b>WYBOT:</b> the S3 is currently scheduled to clean <b>daily at midnight</b>, with a mix of cleaning types/modes programmed across the week.</p>' +
-      '<div class="callout info"><strong>If you change the schedules</strong>WYBOT recommends not running the pool filtration system while the S3 is actively cleaning. The current overnight timing is intended to keep robot cleaning separate from normal daytime filtration; preserve that separation when editing either schedule.</div>' +
+      '<div class="callout info"><strong>If you change the schedules</strong>WYBOT recommends not running the pool filtration system while the S3 is actively cleaning. The pump currently begins its first scheduled run at <b>2:00 AM</b>; if a midnight cleaning cycle is still active at that time, adjust one of the schedules to avoid overlap.</div>' +
       '</div>'
     );
   }
