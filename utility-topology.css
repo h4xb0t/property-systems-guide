@@ -1,0 +1,141 @@
+.utility-topology {
+  margin: 22px 0 12px;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 20px rgba(20, 32, 51, .045);
+}
+
+.utility-topology-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.utility-topology-head h3 {
+  margin: 2px 0 0;
+  font-size: 1.12rem;
+}
+
+.utility-topology-hint {
+  color: var(--muted);
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.utility-topology-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.utility-topology-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.utility-topology-icon {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  background: #eef2f7;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.utility-topology-copy {
+  min-width: 0;
+  flex: 1;
+}
+
+.utility-topology-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.utility-topology-title b {
+  font-size: .96rem;
+}
+
+.utility-count {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #fff0dc;
+  color: #7a4800;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
+.utility-count.single {
+  background: #e9f7f1;
+  color: #17614b;
+}
+
+.utility-topology-item p {
+  margin: 5px 0 0;
+  color: #526076;
+  font-size: .86rem;
+  line-height: 1.45;
+}
+
+.utility-identification-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin: 10px 0 24px;
+  padding: 13px 15px;
+  background: #f5f8ff;
+  border: 1px solid #d5e1fb;
+  border-radius: 12px;
+}
+
+.utility-identification-icon {
+  flex: 0 0 auto;
+  color: var(--accent-2);
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.utility-identification-note strong {
+  display: block;
+  margin-bottom: 3px;
+  font-size: .9rem;
+}
+
+.utility-identification-note p {
+  margin: 0;
+  color: #526076;
+  font-size: .86rem;
+  line-height: 1.48;
+}
+
+@media (max-width: 760px) {
+  .utility-topology-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .utility-topology-head {
+    align-items: flex-start;
+  }
+
+  .utility-topology-hint {
+    display: none;
+  }
+}
