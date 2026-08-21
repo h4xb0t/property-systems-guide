@@ -16,12 +16,11 @@ window.applyGuidePatches = function applyGuidePatchesWithInternetPaths() {
       )
       .replace(
         '<p>The <b>office / shop has its own separate Optimum cable line</b>, independent of the main-house connection.</p>',
-        '<p>The <b>office / shop has a separate physical Optimum cable run</b>. The exterior Optimum box on the <b>RV-garage-facing side of the guest house</b> is the transition point for the buried cable extension that continues out to the office/shop.</p>' +
-        '<div class="callout info"><strong>Optimum can also serve the guest house</strong>If preferred, the Optimum connection can be terminated/activated at the <b>guest house</b> instead of continuing solely to the office/shop. The exterior box on the RV-garage-facing side is the useful handoff point to show an Optimum technician.</div>'
+        '<p>The <b>office / shop has a separate physical Optimum cable run</b>. The exterior Optimum box on the <b>RV-garage-facing side of the guest house</b> is the transition point for the buried cable extension that continues out to the office/shop.</p>'
       )
       .replace(
         '<div class="callout info"><strong>Useful distinction</strong>The main house and office/shop have separate physical Optimum service connections. Do not assume the office/shop line is simply an extension of the main-house internet service.</div>',
-        '<div class="callout info"><strong>Useful distinction</strong>The property has multiple usable Optimum connection points. The main house has its own cable connection, while the guest-house-side exterior box feeds the buried extension toward the office/shop and gives flexibility to place Optimum service at the guest house if preferred.</div>' +
+        '<div class="callout info"><strong>Optimum connection options</strong>The main house has its own Optimum connection. On the RV-garage-facing side of the guest house, an exterior Optimum box feeds the buried extension to the office/shop; that same handoff can instead be used to terminate/activate Optimum service at the <b>guest house</b> if preferred.</div>' +
         '<div class="card" style="margin-top:16px"><div class="card-icon">🛰️</div><h3>Optional Starlink Ethernet path</h3><p>A dedicated <b>Ethernet cable has already been run through the main-house sunroom wall to the patio</b> for optional Starlink / backup-internet use. This provides an easy wired path between indoor networking equipment and equipment placed outside on the patio.</p><p>The run is completely optional. If Starlink or a patio-side backup connection is not wanted, the cable can be <b>cut back or removed entirely</b> without affecting the normal Brightspeed or Optimum service paths.</p></div>'
       );
   }
